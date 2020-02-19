@@ -1,6 +1,6 @@
 using System;
 
-namespace HelloWorldApplication
+namespace Array2dApplication
 {
 
     class Array2d
@@ -16,9 +16,6 @@ namespace HelloWorldApplication
 
             int[,] a;
             a = new int[8, 4];
-            //Console.Write("{0} ", a.Length);
-            //Console.Write("{0} ", a.GetLength(0));
-            //Console.Write("{0} ", a.GetLength(1));
             Random r = new Random();
 
             for (int i = 0; i < a.GetLength(0); i++)
