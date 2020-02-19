@@ -16,8 +16,9 @@ namespace Array2dApplication
 
             int[,] a;
             a = new int[8, 4];
-            Random r = new Random();
 
+            //Read Array
+            Random r = new Random();
             for (int i = 0; i < a.GetLength(0); i++)
             {
                 for (int j = 0; j < a.GetLength(1); j++)
@@ -26,6 +27,7 @@ namespace Array2dApplication
                 }
             }
 
+            //Write Array
             for (int i = 0; i < a.GetLength(0); i++)
             {
                 for (int j = 0; j < a.GetLength(1); j++)
@@ -35,6 +37,7 @@ namespace Array2dApplication
                 Console.WriteLine();
             }
 
+            //Max value
             int max = a[0,0];
             for (int i = 0; i < a.GetLength(0); i++)
             {
@@ -47,13 +50,15 @@ namespace Array2dApplication
                 }
             }
             Console.WriteLine(max);
-
+            
+            //Write b
             for (int i = 0; i < b.Length; i++)
             {
                 Console.Write("{0}, ", b[i]);
             }
             Console.WriteLine();
 
+            //Write c
             for (int i = 0; i < c.Length; i++)
             {
                 Console.Write("{0}, ", c[i]);
