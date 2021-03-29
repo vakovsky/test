@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace ConsoleApp1
 {
-    class Program
+    public class Program
     {
         static void PrintNumbers()
         {
@@ -15,7 +15,7 @@ namespace ConsoleApp1
         }
 
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Thread t = new Thread(PrintNumbers);
             t.Start();
